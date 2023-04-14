@@ -75,4 +75,9 @@ describe('Calculator', () => {
     const ageResults = newCalculator.ageConverter();
     expect(ageResults).toEqual(["Earth age = 30", "Mercury age = 125", "Venus age = 48", "Mars age = 15", "Jupiter age = 2"]);
   });
+
+  test('should return an array with the results of the pastBirthday method', () => {
+    const pastResults = newCalculator.pastBirthday(20);
+    expect(pastResults).toEqual(["10 Earth years have passed", "41.67 Mercury years have passed", "16.13 Venus years have passed", "5.32 Mars years have passed", "0.84 Jupiter years have passed"]);
+  });
 })
