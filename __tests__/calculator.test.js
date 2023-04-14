@@ -58,4 +58,8 @@ describe('Calculator', () => {
   test('should determine how many Mercury years have yet to pass until a future birthday', () => {
     expect(newCalculator.futureMercuryYears).toEqual(41.67);
   });
+
+  test('should determine how many Venus years have yet to pass until a future birthday', () => {
+    expect(newCalculator.futureVenusYears).toEqual(16.13);
+  });
 })
