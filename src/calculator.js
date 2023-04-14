@@ -10,6 +10,7 @@ export default class Calculator {
     this.passedVenusYears = 0;
     this.passedMarsYears = 0;
     this.passedJupiterYears = 0;
+    this.futureEarthYears = 0;
   }
   
   ageConverter() {
@@ -29,4 +30,6 @@ export default class Calculator {
     this.passedMarsYears = parseFloat(((age - pastAge) / 1.88).toFixed(2));
     this.passedJupiterYears = parseFloat(((age - pastAge) / 11.86).toFixed(2));
   }
+
+  
 }
