@@ -36,5 +36,9 @@ describe('Calculator', () => {
 
   test('should determine how many Mercury years have passed since a prior birthday', () => {
     expect(newCalculator.passedMercuryYears).toEqual(41.67);
-  })
+  });
+
+  test('should determine how many Venus years have passed since a prior birthday', () => {
+    expect(newCalculator.passedVenusYears).toEqual(16.13);
+  });
 })
