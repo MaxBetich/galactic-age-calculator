@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: yellow;
+  
+}
+
+div {
+  width: 35%;
+  margin: auto;
+}
+
+.leftimg {
+  float: left;
+  width: 25%;
+  margin: 4%;
+}
+
+.rightimg {
+  float: right;
+  width: 25%;
+  margin: 4%;
+}

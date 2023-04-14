@@ -47,14 +47,16 @@ function handleFormSubmission(event) {
   const input1 = document.getElementById("earth-age").value;
   const input2 = document.getElementById("past-age").value;
   const input3 = document.getElementById("future-age").value;
-  if (input1 != undefined) {
-    displayAgeConverter();
-  }
-  if (input2 != undefined) {
-    displayPastBirthday();
-  }
-  if (input3 != undefined) {
-    displayFutureBirthday();
+  if (input1 === "") {
+    document.getElementById("output").innerText = "Please enter an age to see the results!";
+  }  else {
+    displayAgeConverter();  
+    if (input2 != 0) {
+      displayPastBirthday();
+    }
+    if (input3 != 0) {
+      displayFutureBirthday();
+    }
   }
 }
 
