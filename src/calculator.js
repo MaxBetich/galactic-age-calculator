@@ -47,5 +47,7 @@ export default class Calculator {
     this.futureVenusYears = parseFloat(((futureAge - age) / 0.62).toFixed(2));
     this.futureMarsYears = parseFloat(((futureAge - age) / 1.88).toFixed(2));
     this.futureJupiterYears = parseFloat(((futureAge - age) / 11.86).toFixed(2));
+    const returnArray = [this.futureEarthYears + " Earth years have yet to pass", this.futureMercuryYears + " Mercury years have yet to pass", this.futureVenusYears + " Venus years have yet to pass", this.futureMarsYears + " Mars years have yet to pass", this.futureJupiterYears + " Jupiter years have yet to pass"];
+    return returnArray;
   }
 }
