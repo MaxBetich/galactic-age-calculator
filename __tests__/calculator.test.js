@@ -62,4 +62,8 @@ describe('Calculator', () => {
   test('should determine how many Venus years have yet to pass until a future birthday', () => {
     expect(newCalculator.futureVenusYears).toEqual(16.13);
   });
+
+  test('should determine how many Mars years have passed since a prior birthday', () => {
+    expect(newCalculator.futureMarsYears).toEqual(5.32);
+  });
 })
