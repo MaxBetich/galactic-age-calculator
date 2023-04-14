@@ -7,6 +7,7 @@ describe('Calculator', () => {
   beforeEach(() => {
     newCalculator = new Calculator(30);
     newCalculator.ageConverter();
+    newCalculator.pastBirthday(20);
   });
 
   test('should successfully create a new Calculator object with values for Earth, Mercury, Venus, Mars, and Jupiter ages', () => {
@@ -27,5 +28,9 @@ describe('Calculator', () => {
 
   test('should successfully convert earthAge to jupiterAge', () => {
     expect(newCalculator.jupiterAge).toEqual(2);
+  });
+
+  test('should determine how many Earth years have passed since a prior birthday', () => {
+    expect(newCalculator.passedEarthYears).toEqual(10);
   });
 })
