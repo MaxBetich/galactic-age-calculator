@@ -31,5 +31,9 @@ export default class Calculator {
     this.passedJupiterYears = parseFloat(((age - pastAge) / 11.86).toFixed(2));
   }
 
-  
+  futureBirthday(birthday) {
+    const age = this.earthAge;
+    const futureAge = birthday;
+    this.futureEarthYears = parseFloat((futureAge - age).toFixed(2));
+  }
 }
