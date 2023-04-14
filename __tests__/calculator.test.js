@@ -34,5 +34,7 @@ describe('Calculator', () => {
     expect(newCalculator.passedEarthYears).toEqual(10);
   });
 
-  
+  test('should determine how many Mercury years have passed since a prior birthday', () => {
+    expect(newCalculator.passedMercuryYears).toEqual(41.67);
+  })
 })
