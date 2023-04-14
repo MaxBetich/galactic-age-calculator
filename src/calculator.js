@@ -23,6 +23,8 @@ export default class Calculator {
     this.venusAge = Math.floor(age / 0.62);
     this.marsAge = Math.floor(age / 1.88);
     this.jupiterAge = Math.floor(age / 11.86);
+    const returnArray = ["Earth age = " + this.earthAge, "Mercury age = " + this.mercuryAge, "Venus age = " + this.venusAge, "Mars age = " + this.marsAge, "Jupiter age = " + this.jupiterAge];
+    return returnArray;
   }
 
   pastBirthday(birthday) {
