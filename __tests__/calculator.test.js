@@ -24,4 +24,8 @@ describe('Calculator', () => {
   test('should successfully convert earthAge to marsAge', () => {
     expect(newCalculator.marsAge).toEqual(15);
   });
+
+  test('should successfully convert earthAge to jupiterAge', () => {
+    expect(newCalculator.jupiterAge).toEqual(2);
+  });
 })
