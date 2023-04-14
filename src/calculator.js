@@ -35,6 +35,8 @@ export default class Calculator {
     this.passedVenusYears = parseFloat(((age - pastAge) / 0.62).toFixed(2));
     this.passedMarsYears = parseFloat(((age - pastAge) / 1.88).toFixed(2));
     this.passedJupiterYears = parseFloat(((age - pastAge) / 11.86).toFixed(2));
+    const returnArray = [this.passedEarthYears + " Earth years have passed", this.passedMercuryYears + " Mercury years have passed", this.passedVenusYears + " Venus years have passed", this.passedMarsYears + " Mars years have passed", this.passedJupiterYears + " Jupiter years have passed"];
+    return returnArray;
   }
 
   futureBirthday(birthday) {
