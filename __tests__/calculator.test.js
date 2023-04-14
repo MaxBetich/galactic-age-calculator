@@ -20,4 +20,8 @@ describe('Calculator', () => {
   test('should successfully convert earthAge to venusAge', () => {
     expect(newCalculator.venusAge).toEqual(48);
   });
+
+  test('should successfully convert earthAge to marsAge', () => {
+    expect(newCalculator.marsAge).toEqual(15);
+  });
 })
