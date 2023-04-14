@@ -12,6 +12,7 @@ export default class Calculator {
     this.passedJupiterYears = 0;
     this.futureEarthYears = 0;
     this.futureMercuryYears = 0;
+    this.futureVenusYears = 0;
   }
   
   ageConverter() {
@@ -37,5 +38,6 @@ export default class Calculator {
     const futureAge = birthday;
     this.futureEarthYears = parseFloat((futureAge - age).toFixed(2));
     this.futureMercuryYears = parseFloat(((futureAge - age) / 0.24).toFixed(2));
+    this.futureVenusYears = parseFloat(((futureAge - age) / 0.62).toFixed(2));
   }
 }
