@@ -54,4 +54,8 @@ describe('Calculator', () => {
   test('should determine how many Earth years have yet to pass until a future birthday', () => {
     expect(newCalculator.futureEarthYears).toEqual(10);
   });
+
+  test('should determine how many Mercury years have yet to pass until a future birthday', () => {
+    expect(newCalculator.futureMercuryYears).toEqual(41.67);
+  });
 })
