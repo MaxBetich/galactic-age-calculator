@@ -70,4 +70,9 @@ describe('Calculator', () => {
   test('should determine how many Jupiter years have passed since a prior birthday', () => {
     expect(newCalculator.futureJupiterYears).toEqual(0.84);
   });
+
+  test('should return an array with the results of the users age on other planets', () => {
+    const ageResults = newCalculator.ageConverter();
+    expect(ageResults).toEqual(["Earth age = 30", "Mercury age = 125", "Venus age = 48", "Mars age = 15", "Jupiter age = 2"]);
+  });
 })
