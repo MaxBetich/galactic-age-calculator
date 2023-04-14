@@ -4,14 +4,21 @@ export default class Calculator {
     this.mercuryAge = 0;
     this.venusAge = 0;
     this.marsAge = 0;
-    this.jupiterAge = 0;    
+    this.jupiterAge = 0;
+    this.passedEarthYears = 0;    
   }
   
   ageConverter() {
-    let age = this.earthAge;
+    const age = this.earthAge;
     this.mercuryAge = Math.floor(age / 0.24);
     this.venusAge = Math.floor(age / 0.62);
     this.marsAge = Math.floor(age / 1.88);
     this.jupiterAge = Math.floor(age / 11.86);
+  }
+
+  pastBirthday(birthday) {
+    const age = this.earthAge;
+    const pastAge = birthday;
+    this.passedEarthYears = parseFloat((age - pastAge).toFixed(2));
   }
 }
