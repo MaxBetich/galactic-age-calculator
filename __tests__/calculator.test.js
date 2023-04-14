@@ -66,4 +66,8 @@ describe('Calculator', () => {
   test('should determine how many Mars years have passed since a prior birthday', () => {
     expect(newCalculator.futureMarsYears).toEqual(5.32);
   });
+
+  test('should determine how many Jupiter years have passed since a prior birthday', () => {
+    expect(newCalculator.futureJupiterYears).toEqual(0.84);
+  });
 })
