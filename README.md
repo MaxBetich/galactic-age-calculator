@@ -19,6 +19,7 @@ This page allows the user to input their age and see their equivalent age on dif
  * Clone project from this [Github repository](https://github.com/MaxBetich/galactic-age-calculator.git) to your desktop.
  * Navigate to the top level of the "galactic-age-calculator" directory in your terminal.
  * Run the command "npm install" in your terminal.
+ * Run the command "npm test" to run the automated testing scripts.
  * Run the command "npm run start" to launch the page in your default web browser.
  
 
